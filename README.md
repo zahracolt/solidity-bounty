@@ -1,15 +1,18 @@
 # Solidity StackUp Bounty
 
-## Function Analysis: abi.encodeWithSelector
+## Function Analysis
 
 ### Protocol Name: Aave
 ### Category: DeFi
 ### Smart Contract: AaveStarknetBridgeActivationPayload
 
-### Function Name: execute()
-### Block Explorer Link: [AaveStarknetBridgeActivationPayload contract on Etherscan](https://etherscan.io/address/0x0000000000000000000000000000000000000000#code)
+### Function Name: abi.encodeWithSelector
+
+### Block Explorer Link: 
+[AaveStarknetBridgeActivationPayload contract on Etherscan](https://etherscan.io/address/0x0000000000000000000000000000000000000000#code)
 
 ### Function Code:
+
 ```solidity
 // SPDX-License-Identifier: Apache-2.0.
 pragma solidity ^0.8.0;
@@ -143,9 +146,11 @@ contract AaveStarknetBridgeActivationPayload {
 }
 ```
 
-### Used Encoding/Decoding or Call Method: abi.encodeWithSelector
+### Used Encoding/Decoding or Call Method: 
+abi.encodeWithSelector
 
-### Purpose: The `abi.encodeWithSelector` function is used to encode the function call to `L1_BRIDGE_IMPLEMENTATION.initialize` with the specified parameters.
+### Purpose: 
+The `abi.encodeWithSelector` function is used to encode the function call to `L1_BRIDGE_IMPLEMENTATION.initialize` with the specified parameters.
 
 ### Detailed Usage: 
 The `abi.encodeWithSelector` function is used to encode the function call to `L1_BRIDGE_IMPLEMENTATION.initialize` with the specified parameters. This function call is then passed to the `createDeterministic` function of the `PROXY_FACTORY`. 
